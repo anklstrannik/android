@@ -25,8 +25,11 @@ class MainActivity : AppCompatActivity() {
         fab = findViewById(R.id.main_fab)
 
         fab.setOnClickListener {
-            adapter.addItem(ToDoItem("New title", "It works", 444))
-            Log.d("clicks", "Fab works")
+            val dialog = CustomDialog(this)
+            dialog.show()
+
+//            adapter.addItem(ToDoItem("New title", "It works", 444))
+//            Log.d("clicks", "Fab works")
         }
 
         // this creates a vertical layout Manager
@@ -37,9 +40,9 @@ class MainActivity : AppCompatActivity() {
 
         // This loop will create 20 Views containing
         // the image with the count of view
-        for (item in 1..40) {
-            data.add(ToDoItem("title", "description", item))
-        }
+//        for (item in 1..40) {
+//            data.add(ToDoItem("title", "description", item))
+//        }
 
         if (data.isEmpty()){
             stubContainer.visibility = VISIBLE
@@ -55,5 +58,9 @@ class MainActivity : AppCompatActivity() {
 
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
+    }
+
+    fun addItem(toString: String) {
+
     }
 }
