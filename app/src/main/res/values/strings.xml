@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">To do List</string>
+    <string name="add_item">Add Item</string>
+    <string name="title_will_by_here">Title will by here</string>
+    <string name="description_will_by_here">Description will by here</string>
+    <string name="number_will_by_here">Number will by here</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>
